@@ -20,5 +20,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+The above license DOES NOT include the attached image and music files, located in
+folders game/images, game/music and game/sound. See the folders for their licenses.
+
 TheCarmillaGame uses Ren'Py which is licensed under the MIT license.
 See http://www.renpy.org/doc/html/license.html for more details.
