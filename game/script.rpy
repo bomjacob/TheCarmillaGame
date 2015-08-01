@@ -7,10 +7,8 @@ init:
 label start:
     scene mm_bg
 
-    e "You've created a new Ren'Py game."
-    
-    show snow
+    "Hello2"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    call riddle_battle from _call_riddle_battle
 
     return
