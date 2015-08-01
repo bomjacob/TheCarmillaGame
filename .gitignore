@@ -1,5 +1,9 @@
 log.txt
 errors.txt
+traceback.txt
+*.sublime-project
+*.sublime-workspace
+tmp
 game/cache
 game/saves
 game/*.rpyc
