@@ -1,5 +1,5 @@
 #http://www.renpy.org/wiki/renpy/doc/cookbook/Shake_effect
-init python:
+init 2 python:
         import math
 
         class Shaker(object):
