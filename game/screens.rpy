@@ -174,6 +174,12 @@ screen nvl(dialogue, items=None):
 # Screen that's used to display the main menu, when Ren'Py first starts
 # http://www.renpy.org/doc/html/screen_special.html#main-menu
 
+image clouds:
+        "images/mm/clouds.png"
+        xpos 0.0
+        linear 30.0 xpos -1.015
+        repeat
+
 screen main_menu():
 
     # This ensures that any other menu screen is replaced.
@@ -181,7 +187,11 @@ screen main_menu():
 
     # The background of the main menu.
     window:
-        style "mm_root"
+        xalign 0
+        yalign 0
+        add "images/mm/text.png"
+        add "clouds"
+        
 
     # The main menu buttons.
     frame:

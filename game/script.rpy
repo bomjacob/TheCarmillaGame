@@ -5,7 +5,7 @@ init:
 
 # The game starts here.
 label start:
-    scene mm_bg
+    
 
     "Hello2"
 

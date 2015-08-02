@@ -46,8 +46,7 @@ label riddle_battle:
             $ le(random.choice(lief_replies[True]))
             $ correct_riddles += 1
         else:
-            with vpunch
-            with hpunch
+            with shake
             $ le(random.choice(lief_replies[False]))
             
 
