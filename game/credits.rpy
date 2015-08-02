@@ -2,26 +2,27 @@
 label credits:
     if persistent.credits_seen is None:
         $ persistent.credits_seen = False
-    $ credits_speed = 20
     scene black
-    show cred at Move((0.5, 5.0), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
-    
+    with dissolve
+
     show theend:
         yanchor 0.5 ypos 0.5
         xanchor 0.5 xpos 0.5
     with dissolve
-    $ renpy.pause(5, hard=not persistent.credits_seen)
+    $ renpy.pause(3, hard=not persistent.credits_seen)
     hide theend
-    with dissolve
-    $ renpy.pause(credits_speed - 5, hard=not persistent.credits_seen)
-    
+
+    show cred
+    $ renpy.pause(credits_speed, hard=not persistent.credits_seen)
+    hide cred
+
     show thanks:
         yanchor 0.5 ypos 0.5
         xanchor 0.5 xpos 0.5
     with dissolve
     $ renpy.pause(4, hard=not persistent.credits_seen)
     hide thanks
-    with dissolve
+
     $ persistent.credits_seen = True
     return
 
@@ -31,7 +32,7 @@ init python:
         ('Writers', 'M', 'mhbills92.tumblr.com'),
         ('Backgrounds', 'Paperclipfreak', 'omgpaperclipfreak.tumblr.com'),
         ('Characters', 'Caroline Astruz', 'tokiwooki.tumblr.com'),
-        ('Programming', 'Josie', 'howlwithme.co.vu'),
+        ('Additional programming', 'Josie', 'howlwithme.co.vu'),
         ('PR', 'Nicole', 'nicoleseatingcake.tumblr.com')
     )
     credits_s = "{size=80}Credits\n"
@@ -46,6 +47,11 @@ init python:
     credits_s += "\n".join(str.split(renpy.version()))
     
 init:
-    image cred = Text(credits_s, text_align=0.5)
+    $ credits_speed = 20
+    image cred:
+        Text(credits_s, text_align=0.5)
+        anchor (0.5, 0.0)
+        pos (0.5, 1.0)
+        linear credits_speed ypos 0.0 yanchor 1.0
     image theend = Text("{size=80}The end", text_align=0.5)
     image thanks = Text("{size=80}Thanks for Playing!", text_align=0.5)
