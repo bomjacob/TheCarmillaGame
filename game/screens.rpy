@@ -175,7 +175,7 @@ screen nvl(dialogue, items=None):
 # http://www.renpy.org/doc/html/screen_special.html#main-menu
 
 image clouds:
-        "images/mm/clouds.png"
+        "img/mm/clouds.png"
         xpos 0.0
         linear 30.0 xpos -1.015
         repeat
@@ -189,7 +189,7 @@ screen main_menu():
     window:
         xalign 0
         yalign 0
-        add "images/mm/text.png"
+        add "img/mm/logo.png"
         add "clouds"
         
 

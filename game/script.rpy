@@ -1,7 +1,7 @@
 ﻿define e = Character('Eileen', color="#c8ffc8")
 
 init:
-    image snow = Snow("images/Snowflake.gif", maxparticles=200, wind=200)
+    image snow = Snow("img/Snowflake.gif", maxparticles=200, wind=200)
 
 # The game starts here.
 label start:
