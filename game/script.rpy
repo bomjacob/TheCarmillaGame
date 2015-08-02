@@ -9,6 +9,8 @@ label start:
 
     "Hello2"
 
-    call riddle_battle from _call_riddle_battle
+    #call riddle_battle from _call_riddle_battle
+
+    call credits from _call_credits
 
     return
