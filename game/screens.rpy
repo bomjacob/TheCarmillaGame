@@ -175,10 +175,30 @@ screen nvl(dialogue, items=None):
 # http://www.renpy.org/doc/html/screen_special.html#main-menu
 
 image clouds:
-        "img/mm/clouds.png"
+        "ui/mm/clouds.png"
         xpos 0.0
         linear 30.0 xpos -1.015
         repeat
+
+init -2 python:
+    style.ui_large = Style(style.default)
+    style.ui_large.size=48
+    style.ui_large.bold=False
+    style.ui_large.font="ui/Cardinal.ttf"
+    style.ui_large.color="#c7c7c7"
+    style.ui_large.idle_color = "#c7c7c7"
+    style.ui_large.hover_color = "#e7e7e7"
+    style.ui_large.selected_color = "#787878"
+    style.ui_large.kerning = 5
+    style.ui_large.xalign = 0.5
+
+    style.ui_small = Style(style.ui_large)
+    style.ui_small.size = 42
+
+    style.ui_pipe = Style(style.default)
+    style.ui_pipe.color = "#ffffff"
+    style.ui_pipe.size = 42
+    style.ui_pipe.yoffset = -4
 
 screen main_menu():
 
@@ -191,22 +211,40 @@ screen main_menu():
         yalign 0
         add "black"
         add "clouds"
-        add "img/mm/logo.png"
+        add "ui/mm/button_bg.png"
+        add "ui/mm/logo.png"
         
 
     # The main menu buttons.
-    frame:
+    hbox:
+        style_group "title"
+        
+        xalign 0.53
+        yalign 0.91
+        spacing 15
+
+        textbutton _("Start Game") action Start() text_style "ui_large" style "ui_large"
+        text("|") style "ui_pipe"
+        textbutton _("Load Game") action ShowMenu("load") text_style "ui_large" style "ui_large"
+
+    vbox:
         style_group "mm"
-        xalign .98
-        yalign .98
+        xalign 0.05
+        yalign 0.95
+        spacing 15
 
-        has vbox
+        textbutton _("Settings") action ShowMenu("preferences") text_style "ui_small" style "ui_small"
+        textbutton _("Quit") action Quit(confirm=False) text_style "ui_small" style "ui_small"
+        
 
-        textbutton _("Start Game") action Start()
-        textbutton _("Load Game") action ShowMenu("load")
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Help") action Help()
-        textbutton _("Quit") action Quit(confirm=False)
+    vbox:
+        style_group "mm"
+        xalign 0.95
+        yalign 0.95
+        spacing 15
+
+        textbutton _("Credits") action Help() text_style "ui_small" style "ui_small"
+        textbutton _("Help") action Help() text_style "ui_small" style "ui_small"
 
 init -2:
 
