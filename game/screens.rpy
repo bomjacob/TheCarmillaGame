@@ -243,7 +243,7 @@ screen main_menu():
         yalign 0.95
         spacing 15
 
-        textbutton _("Credits") action Help() text_style "ui_small" style "ui_small"
+        textbutton _("Credits") action Start('credits_frommenu') text_style "ui_small" style "ui_small"
         textbutton _("Help") action Help() text_style "ui_small" style "ui_small"
 
 init -2:

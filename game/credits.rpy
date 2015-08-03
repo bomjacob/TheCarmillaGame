@@ -1,30 +1,40 @@
 # Based on http://lemmasoft.renai.us/forums/viewtopic.php?f=51&t=22481
-label credits:
-    if persistent.credits_seen is None:
-        $ persistent.credits_seen = False
+label credits(frommenu=False):
+    if not frommenu:
+        if persistent.credits_seen is None:
+            $ persistent.credits_seen = False
+        $ hard = not persistent.credits_seen
+    else:
+        $ hard = False
     scene black
     with dissolve
 
-    show theend:
-        yanchor 0.5 ypos 0.5
-        xanchor 0.5 xpos 0.5
-    with dissolve
-    $ renpy.pause(3, hard=not persistent.credits_seen)
-    hide theend
+    if not frommenu:
+        show theend:
+            yanchor 0.5 ypos 0.5
+            xanchor 0.5 xpos 0.5
+        with dissolve
+        $ renpy.pause(3, hard=hard)
+        hide theend
 
     show cred
-    $ renpy.pause(credits_speed, hard=not persistent.credits_seen)
+    $ renpy.pause(credits_speed, hard=hard)
     hide cred
 
-    show thanks:
-        yanchor 0.5 ypos 0.5
-        xanchor 0.5 xpos 0.5
-    with dissolve
-    $ renpy.pause(4, hard=not persistent.credits_seen)
-    hide thanks
+    if not frommenu:
+        show thanks:
+            yanchor 0.5 ypos 0.5
+            xanchor 0.5 xpos 0.5
+        with dissolve
+        $ renpy.pause(4, hard=hard)
+        hide thanks
 
-    $ persistent.credits_seen = True
+        $ persistent.credits_seen = True
+
     return
+
+label credits_frommenu:
+    call credits(True) from _call_credits_1
 
 init python:
     credits = (
