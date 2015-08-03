@@ -189,8 +189,9 @@ screen main_menu():
     window:
         xalign 0
         yalign 0
-        add "img/mm/logo.png"
+        add "black"
         add "clouds"
+        add "img/mm/logo.png"
         
 
     # The main menu buttons.
