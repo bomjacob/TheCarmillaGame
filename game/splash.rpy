@@ -15,10 +15,10 @@ the story gap between Season 1 and Season 2 of Carmilla, it is highly recommeded
 entirety of Season 1 before playing this game.{/size}""", text_align=0.5, xmaximum=740)
 
     show disclaimer at top with dissolve
-    if persistent.disclaimer_seen:
-        $ renpy.pause(0.0)
-    else:
+    if not persistent.disclaimer_seen:
         $ renpy.pause(10)
+    else:
+        $ renpy.pause(3)
     hide disclaimer with dissolve
     $ persistent.disclaimer_seen = True
 
