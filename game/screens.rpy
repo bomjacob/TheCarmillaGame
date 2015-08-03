@@ -177,7 +177,7 @@ screen nvl(dialogue, items=None):
 image clouds:
         "ui/mm/clouds.png"
         xpos 0.0
-        linear 30.0 xpos -1.015
+        linear 30.0 xpos -1.0
         repeat
 
 init -2 python:
@@ -260,6 +260,7 @@ init -2:
 screen navigation():
 
     # The background of the game menu.
+    add "#0000005f" # Darken screen slightly
     add "ui/mm/button_bg.png"
 
     vbox:
@@ -545,7 +546,7 @@ screen yesno_prompt(message, yes_action, no_action):
 
     modal True
 
-    style "black"
+    add "#0000009F"
 
     frame:
         style_group "yesno"
@@ -614,10 +615,11 @@ init -2:
 
     style quick_button_text:
         is default
-        size 12
+        size 16
         idle_color "#8888"
         hover_color "#ccc"
         selected_idle_color "#cc08"
         selected_hover_color "#cc0"
         insensitive_color "#4448"
+        font "ui/Cardinal.ttf"
 

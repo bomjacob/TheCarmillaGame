@@ -4,8 +4,7 @@ init:
     image snow = Snow("img/Snowflake.gif", maxparticles=200, wind=200)
 
 # The game starts here.
-label start:
-    
+label start:  
 
     "Hello2"
 
