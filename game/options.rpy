@@ -224,7 +224,7 @@ init -1 python hide:
     config.game_main_transition = None
 
     ## Used when entering the main menu from the splashscreen.
-    config.end_splash_transition = None
+    config.end_splash_transition = dissolve
 
     ## Used when entering the main menu after the game has ended.
     config.end_game_transition = None
