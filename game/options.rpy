@@ -192,7 +192,7 @@ init -1 python hide:
     ## - A file name relative to the base directory, which is opened in a
     ##   web browser.
     ## - None, to disable help.
-    config.help = "README.html"
+    config.help = "game/README.html"
 
 
     #########################################
@@ -270,7 +270,7 @@ init -1 python hide:
 
     ## The default text speed in characters per second. 0 is infinite.
 
-    config.default_text_cps = 10
+    config.default_text_cps = 50
 
     ## The default auto-forward time setting.
 

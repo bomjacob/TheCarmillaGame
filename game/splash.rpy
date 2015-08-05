@@ -15,16 +15,22 @@ experience, but is in no way canon, or in any way indorsed by the Carmilla Write
 the story gap between Season 1 and Season 2 of Carmilla, it is highly recommeded to have watched the \
 entirety of Season 1 before playing this game.{/size}""", text_align=0.5, xmaximum=740)
     image ctc:
-        Text("""{size=10}Press any key to continue{/size}\n""", text_align=0.5, xmaximum=740)
+        linear 0.75 alpha 1.0
+        Text("""{size=20}Press any key to continue{/size}\n""", text_align=0.5, xmaximum=740)
+        linear 0.75 alpha 0.25
+        repeat
 
     show disclaimer at top with dissolve
     if not persistent.disclaimer_seen:
+        $ renpy.pause(5.0, hard=True)
         show ctc at center with dissolve
         $ renpy.pause()
     else:
+        show ctc at center with dissolve
         $ renpy.pause(3)
-    hide disclaimer with dissolve
+    hide disclaimer
     hide ctc
+    with dissolve
     $ persistent.disclaimer_seen = True
 
     show text "{size=+10}TheCarmillaGame Team presents...{/size}" at truecenter with dissolve
