@@ -330,6 +330,9 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('**.md', None)
+    build.classify('**.sublime-project', None)
+    build.classify('**.sublime-workspace', None)
 
     ## To archive files, classify them as 'archive'.
 
@@ -339,6 +342,6 @@ init python:
     ## Files matching documentation patterns are duplicated in a mac app
     ## build, so they appear in both the app and the zip file.
 
-    build.documentation('*.html')
-    build.documentation('*.txt')
+    build.documentation('**.html')
+    build.documentation('**.txt')
     

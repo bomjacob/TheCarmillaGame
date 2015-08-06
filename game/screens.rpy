@@ -405,6 +405,7 @@ init -2:
 # http://www.renpy.org/doc/html/screen_special.html#prefereces
 
 screen preferences():
+    key "K_ESCAPE" action Return()
 
     tag menu
 
