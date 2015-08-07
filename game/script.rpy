@@ -21,6 +21,16 @@ label start:
 
             play sound "sound/effect/angry_mob.mp3"
 
+            "Testing snow"
+
+            show snow
+            $ renpy.pause(5.0)
+            hide snow
+
+            "Testing shake"
+
+            "An earthquake!?!?" with shake
+
             "Testing test riddle battle with placeholder dialouge."
 
             call riddle_battle from _call_riddle_battle
