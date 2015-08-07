@@ -6,5 +6,5 @@ traceback.txt
 tmp
 game/cache
 game/saves
-game/*.rpyc
-game/*.bak
+**.rpyc
+**.bak
