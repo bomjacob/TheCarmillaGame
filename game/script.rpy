@@ -21,7 +21,7 @@ label start:
         "Tiny Demo":
             call dorm from _call_dorm
         "Tests":
-            call test from _call_tests
+            call tests from _call_tests
 
     call credits from _call_credits
 
