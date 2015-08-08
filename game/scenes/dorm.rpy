@@ -1,9 +1,4 @@
 label dorm:
-    define c = Character(name="Carmilla")
-    define l = Character(name="Laura")
-    define p = Character(name="Perry")
-    define laf = Character(name="LaFontaine")
-
     show black
 
     show laura
