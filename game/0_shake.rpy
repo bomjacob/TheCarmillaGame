@@ -52,3 +52,4 @@ init 2 python:
                       **properties)
 
     Shake = renpy.curry(_Shake)
+    shake = _Shake((0, 0, 0, 0), 1.0, dist=5)
