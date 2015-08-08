@@ -2,7 +2,7 @@ label dorm:
     show black
 
     show laura
-    "I hold onto the desk in front of me as the ground shook and close my laptop as it stops."
+    "I hold onto the desk in front of me as the ground shook and close my laptop as it stops." with shake
     show laura at right with move
     show carmilla at left with dissolve
     c "Do you really think now is the time to worry about your stupid computer?"
@@ -12,10 +12,11 @@ label dorm:
     c"And here comes the Ginger Twins."
 
     hide carmilla with dissolve
-    show perry at left with dissolve
+    show perry at left
+    show laf at truecenter
+    with easeinleft
     p "Laura, do you really need that?"
     l "As much as you need that bag."
-    show laf at truecenter with dissolve
     "LaFontaine adjusts the bag they are holding."
     hide laura with dissolve
     show carmilla at right with dissolve
