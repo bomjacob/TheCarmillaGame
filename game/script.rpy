@@ -1,5 +1,7 @@
 ﻿init:
+    # Custom effects / transitions
     image snow = Snow("img/Snowflake.gif", maxparticles=200, wind=200)
+    define shake = Shake((0, 0, 0, 0), 1.0, dist=5)
 
     #Main characters
     define c = Character(name="Carmilla")
@@ -42,7 +44,7 @@ label start:
 
             "An earthquake!?!?" with shake
 
-            "Testing test riddle battle with placeholder dialouge."
+            "Testing test riddle battle with placeholder dialogue."
 
             call riddle_battle from _call_riddle_battle
 
