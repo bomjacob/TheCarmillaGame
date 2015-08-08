@@ -11,8 +11,8 @@ label splashscreen:
 (The Web Series). Carmilla (The Web Series) is the intellectual property of U by Kotex. There is no \
 financial gain made from this game nor will any be sought. This is for entertainment purposes only.\n\n \
 While this game is based, in part, on tweets that are part of the Carmilla (The Web Series) transmedia \
-experience, but is in no way canon, or in any way indorsed by the Carmilla Writers.\n\nThis game fills \
-the story gap between Season 1 and Season 2 of Carmilla, it is highly recommeded to have watched the \
+experience, but is in no way canon, or in any way endorsed by the Carmilla Writers.\n\nThis game fills \
+the story gap between Season 1 and Season 2 of Carmilla, it is highly recommended to have watched the \
 entirety of Season 1 before playing this game.{/size}""", text_align=0.5, xmaximum=740)
     image ctc:
         linear 0.75 alpha 1.0
