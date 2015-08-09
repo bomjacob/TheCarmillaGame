@@ -254,7 +254,7 @@ init -1 python hide:
     ## stored. (It needs to be set early, before any other init code
     ## is run, so the persistent information can be found by the init code.)
 python early:
-    config.save_directory = "game-1437930948"
+    config.save_directory = "TheCarmilaGame"
 
 init -1 python hide:
     #########################################
