@@ -39,6 +39,7 @@ label credits_frommenu:
 init python:
     credits = (
         ('Lead Developer', 'Jacob', 'the-ballad-of-buffy.tumblr.com'),
+        ('Developer', 'Bex Edmondson', 'bexinterrobang.tumblr.com'),
         ('Writers', 'M', 'mhbills92.tumblr.com'),
         ('Backgrounds', 'Paperclipfreak', 'omgpaperclipfreak.tumblr.com'),
         ('Characters', 'Caroline Astruz', 'tokiwooki.tumblr.com'),
