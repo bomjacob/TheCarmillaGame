@@ -9,7 +9,7 @@ label tests:
 
       "Testing mob sounds"
 
-      play sound "sound/effect/angry_mob.mp3"
+      play sound "sound/effect/angry_mob.ogg"
 
       "Testing snow"
 
