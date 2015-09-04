@@ -7,16 +7,16 @@ label splashscreen:
     $ renpy.pause(0.5, hard=True)
 
     image disclaimer:
-        Text("""\n{size=80}Disclaimer{/size}\n\n{size=25}TheCarmillaGame Team does not own Carmilla \
+        Text("""\n{color=#fff}{size=80}Disclaimer{/size}\n\n{size=25}TheCarmillaGame Team does not own Carmilla \
 (The Web Series). Carmilla (The Web Series) is the intellectual property of U by Kotex. There is no \
 financial gain made from this game nor will any be sought. This is for entertainment purposes only.\n\n \
 While this game is based, in part, on tweets that are part of the Carmilla (The Web Series) transmedia \
-experience, but is in no way canon, or in any way endorsed by the Carmilla Writers.\n\nThis game fills \
-the story gap between Season 1 and Season 2 of Carmilla, it is highly recommended to have watched the \
-entirety of Season 1 before playing this game.{/size}""", text_align=0.5, xmaximum=740)
+experience, it is in no way canon, or in any way endorsed by the Carmilla Writers.\n\nThis game fills \
+the story gap between Season 1 and Season 2 of Carmilla, and we highly recommend watching the \
+entirety of Season 1 before playing this game.{/size}{/color}""", text_align=0.5, xmaximum=740)
     image ctc:
         linear 0.75 alpha 1.0
-        Text("""{size=20}Press any key to continue{/size}\n""", text_align=0.5, xmaximum=740)
+        Text("""{color=#fff}{size=20}Press any key to continue{/size}{/color}\n""", text_align=0.5, xmaximum=740)
         linear 0.75 alpha 0.25
         repeat
 
@@ -33,7 +33,7 @@ entirety of Season 1 before playing this game.{/size}""", text_align=0.5, xmaxim
     with dissolve
     $ persistent.disclaimer_seen = True
 
-    show text "{size=+10}TheCarmillaGame Team presents...{/size}" at truecenter with dissolve
+    show text "{color=#fff}{size=+10}TheCarmillaGame Team presents...{/size}{/color}" at truecenter with dissolve
     $ renpy.pause(2, hard=False)
 
     hide text with dissolve

@@ -17,8 +17,8 @@ init -1 python hide:
 
     ## These control the width and height of the screen.
 
-    config.screen_width = 1024
-    config.screen_height = 768
+    config.screen_width = 1280
+    config.screen_height = 720
 
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
@@ -88,7 +88,7 @@ init -1 python hide:
     ## are the size of the left/right and top/bottom borders,
     ## respectively.
 
-    # style.window.background = Frame("frame.png", 12, 12)
+    style.window.background = Frame("img/textbackground.png", 67, 86)
 
     ## Margin is space surrounding the window, where the background
     ## is not drawn.
@@ -101,15 +101,15 @@ init -1 python hide:
     ## Padding is space inside the window, where the background is
     ## drawn.
 
-    # style.window.left_padding = 6
-    # style.window.right_padding = 6
-    # style.window.top_padding = 6
-    # style.window.bottom_padding = 6
+    style.window.left_padding = 25
+    style.window.right_padding = 25
+    style.window.top_padding = 25
+    style.window.bottom_padding = 25
 
     ## This is the minimum height of the window, including the margins
     ## and padding.
 
-    # style.window.yminimum = 250
+    style.window.yminimum = 200
 
 
     #########################################
@@ -142,6 +142,10 @@ init -1 python hide:
     ## The default size of text.
 
     # style.default.size = 22
+    
+    ## The default color of text.
+
+    style.default.color = "#000000"
 
     ## Note that these only change the size of some of the text. Other
     ## buttons have their own styles.
@@ -254,7 +258,7 @@ init -1 python hide:
     ## stored. (It needs to be set early, before any other init code
     ## is run, so the persistent information can be found by the init code.)
 python early:
-    config.save_directory = "TheCarmilaGame"
+    config.save_directory = "TheCarmillaGame"
 
 init -1 python hide:
     #########################################
