@@ -9,6 +9,7 @@ init python hide:
                 renpy.image(name, Image(file))
                 continue
             continue
+        #Load backgrounds
         if file.startswith('img/bg/'):
             if file.endswith('.jpg'):
                 name = file.replace('img/bg/','').replace('/', ' ').replace('.jpg','')
