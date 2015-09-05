@@ -4,8 +4,8 @@
 
     #Main characters
     define carm = Character(name="Carmilla", who_color="#F20505")
-    define laur = Character(name="Laura", who_color="#FFCE00", what_slow_cps_multiplier=1.2)
-    define perr = Character(name="Perry", who_color="#0D198A")
+    define laura = Character(name="Laura", who_color="#FFCE00", what_slow_cps_multiplier=1.2, image="laura")
+    define perry = Character(name="Perry", who_color="#0D198A")
     define laf = Character(name="LaFontaine", who_color="#268A15")
 
     #Minor characters
