@@ -140,7 +140,7 @@ init -1 python hide:
 
     ## The file containing the default font.
 
-    # style.default.font = "DejaVuSans.ttf"
+    style.default.font = "ui/Molengo/Molengo-Regular.ttf"
 
     ## The default size of text.
 
