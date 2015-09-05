@@ -46,15 +46,15 @@ init python:
         ('Additional programming', 'Josie', 'howlwithme.co.vu'),
         ('PR', 'Nicole', 'nicoleseatingcake.tumblr.com')
     )
-    credits_s = "{size=80}Credits\n"
+    credits_s = "{color=#fff}{size=80}Credits\n"
     c1 = ''
     for c in credits:
         if not c1==c[0]:
-            credits_s += "\n{size=40}" + c[0] + "\n"
-        credits_s += '{size=60}' + c[1] + "\n"
-        credits_s += '{size=10}' + c[2] + "{size=60}\n"
+            credits_s += "\n{color=#fff}{size=40}" + c[0] + "\n"
+        credits_s += '{color=#fff}{size=60}' + c[1] + "\n"
+        credits_s += '{color=#fff}{size=20}' + c[2] + "{size=60}\n"
         c1=c[0]
-    credits_s += "\n{size=40}Engine\n{size=60}" 
+    credits_s += "\n{color=#fff}{size=40}Engine\n{size=60}" 
     credits_s += "\n".join(str.split(renpy.version()))
     
 init:
@@ -64,5 +64,5 @@ init:
         anchor (0.5, 0.0)
         pos (0.5, 1.0)
         linear credits_speed ypos 0.0 yanchor 1.0
-    image theend = Text("{size=80}The end", text_align=0.5)
-    image thanks = Text("{size=80}Thanks for Playing!", text_align=0.5)
+    image theend = Text("{color=#fff}{size=80}The end", text_align=0.5)
+    image thanks = Text("{color=#fff}{size=80}Thanks for Playing!", text_align=0.5)
