@@ -1,24 +1,26 @@
+image lauranormal = "img/characters/laura/lauranormal.png"
+image dorm = "img/rooms/dorm.jpg"
 label dorm:
-    show black
+    show dorm
 
-    show laura
+    show lauranormal
     "I hold onto the desk in front of me as the ground shook and close my laptop as it stops." with shake
-    show laura at right with move
+    show lauranormal at right with move
     show carmilla at left with dissolve
     c "Do you really think now is the time to worry about your stupid computer?"
     "Carmilla is standing in the doorway when I turn around."
     l "I'm not leaving it. What if I need to make an update?"
     "I put the laptop in its bag and throw it over my shoulder. Carmilla looks into the hallway."
-    c"And here comes the Ginger Twins."
+    c "And here comes the Ginger Twins."
 
     hide carmilla with dissolve
     show perry at left
     show laf at truecenter
     with easeinleft
-    p "Laura, do you really need that?"
+    p "lauranormal, do you really need that?"
     l "As much as you need that bag."
     "LaFontaine adjusts the bag they are holding."
-    hide laura with dissolve
+    hide lauranormal with dissolve
     show carmilla at right with dissolve
     c "She might need to make an update"
     laf "We're going into the mountains."
@@ -32,7 +34,7 @@ label dorm:
 
     "The ground shakes again." with shake
     hide perry with dissolve
-    show laura at left with dissolve
+    show lauranormal at left with dissolve
     l "Maybe we should flee now and argue later?"
     laf "Yeah, let's head for the hills."
     hide laf with dissolve
