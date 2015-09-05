@@ -3,9 +3,9 @@
     image snow = Snow("img/Snowflake.gif", maxparticles=200, wind=200)
 
     #Main characters
-    define c = Character(name="Carmilla", who_color="#F20505")
-    define l = Character(name="Laura", who_color="#FFCE00", what_slow_cps_multiplier=1.2)
-    define p = Character(name="Perry", who_color="#0D198A")
+    define carm = Character(name="Carmilla", who_color="#F20505")
+    define laura = Character(name="Laura", who_color="#FFCE00", what_slow_cps_multiplier=1.2, image="laura")
+    define perry = Character(name="Perry", who_color="#0D198A")
     define laf = Character(name="LaFontaine", who_color="#268A15")
 
     #Minor characters

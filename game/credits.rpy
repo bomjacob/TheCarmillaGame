@@ -50,11 +50,11 @@ init python:
     c1 = ''
     for c in credits:
         if not c1==c[0]:
-            credits_s += "\n{color=#fff}{size=40}" + c[0] + "\n"
-        credits_s += '{color=#fff}{size=60}' + c[1] + "\n"
-        credits_s += '{color=#fff}{size=20}' + c[2] + "{size=60}\n"
+            credits_s += "\n{size=40}" + c[0] + "\n"
+        credits_s += '{size=60}' + c[1] + "\n"
+        credits_s += '{size=20}' + c[2] + "{size=60}\n"
         c1=c[0]
-    credits_s += "\n{color=#fff}{size=40}Engine\n{size=60}" 
+    credits_s += "\n{size=40}Engine\n{size=60}" 
     credits_s += "\n".join(str.split(renpy.version()))
     
 init:

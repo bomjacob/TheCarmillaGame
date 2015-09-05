@@ -18,7 +18,7 @@ init -1 python hide:
     ## These control the width and height of the screen.
 
     config.screen_width = 1280
-    config.screen_height = 720
+    config.screen_height = 910
 
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
@@ -29,6 +29,9 @@ init -1 python hide:
     # with tracebacks and other debugging logs.
     config.name = "The Carmilla Game"
     config.version = "0.0"
+    
+    # Added this line so that we can output log functions
+    config.log = "debuglog.txt"
 
     #########################################
     # Themes
