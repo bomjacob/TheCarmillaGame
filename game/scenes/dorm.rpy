@@ -1,15 +1,15 @@
 init:
-    $ doorway = Position(xpos = 0.1, xanchor = 0, ypos = 0.1, yanchor = 0)
+    $ doorway = Position(xpos = 0.34, xanchor = 0, ypos = 0.6, yanchor = 0.99) # can't put in 1 because then renpy thinks you mean 1 pixel from top
 
 label dorm:
     show dorm
 
-    show laura normal at doorway
+    show laura normal at center
     "I hold onto the desk in front of me as the ground shakes." with shake
     "I close the lid of my laptop as it stops, and turn towards the door."
     show laura normal at right with move
-    show carm normal at doorway with dissolve
-    carm "Do you really think now is the time to worry about your stupid computer?" 
+    show carm normal at center with dissolve
+    carm "Do you really think now is the time to worry about your laptop?" 
     "Carmilla is standing in the doorway, looking harried."
     laura "I'm not leaving it. What if I need to make an update?"
     "I put the laptop in its bag and throw it over my shoulder. Carmilla looks into the hallway."

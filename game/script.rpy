@@ -21,7 +21,7 @@ label start:
     menu:
         "Run tests, or tiny demo?"
     
-        "Tiny Demo":
+        "Dorm Scene":
             call dorm from _call_dorm
         "Tests":
             call tests from _call_tests
