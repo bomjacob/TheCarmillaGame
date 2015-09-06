@@ -15,6 +15,9 @@
 
 # The game starts here.
 label start:  
+    #Stop main menu music
+    stop music
+
     menu:
         "Run tests, or tiny demo?"
     
