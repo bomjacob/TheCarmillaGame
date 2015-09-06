@@ -20,6 +20,11 @@ init -1 python hide:
     config.screen_width = 1280
     config.screen_height = 910
 
+    #Icons
+    
+    config.windows_icon = "icon.png"
+    config.window_icon = "iconmac.png"
+
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
 
@@ -218,16 +223,16 @@ init -1 python hide:
     config.main_game_transition = None
 
     ## Used when returning to the main menu from the game.
-    config.game_main_transition = None
+    config.game_main_transition = dissolve
 
     ## Used when entering the main menu from the splashscreen.
     config.end_splash_transition = dissolve
 
     ## Used when entering the main menu after the game has ended.
-    config.end_game_transition = None
+    config.end_game_transition = dissolve
 
     ## Used when a game is loaded.
-    config.after_load_transition = None
+    config.after_load_transition = dissolve
 
     ## Used when the window is shown.
     config.window_show_transition = None
