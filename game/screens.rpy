@@ -182,7 +182,7 @@ image clouds:
 
 init -2 python:
     style.ui_large = Style(style.default)
-    style.ui_large.size=46
+    style.ui_large.size=56
     style.ui_large.bold=False
     style.ui_large.font="ui/Cardinal.ttf"
     style.ui_large.color="#a7a7a7"
@@ -193,11 +193,11 @@ init -2 python:
     style.ui_large.xalign = 0.5
 
     style.ui_small = Style(style.ui_large)
-    style.ui_small.size = 40
+    style.ui_small.size = 50
 
     style.ui_pipe = Style(style.default)
     style.ui_pipe.color = "#ffffff"
-    style.ui_pipe.size = 42
+    style.ui_pipe.size = 52
     style.ui_pipe.yoffset = -4
 
 screen main_menu():

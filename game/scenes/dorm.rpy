@@ -16,12 +16,12 @@ label dorm:
     show laf normal at truecenter
     with easeinleft
     perry "Laura, do you really need that?"
-    laura "As much as you need that giant bag."
+    laura "As much as you need that gigantic bag."
     "LaFontaine adjusts the bag they are holding."
     hide laura with dissolve
     show carm normal at right with dissolve
     carm "She might need to make an update."
-    laf "We're going into the ''mountains''."
+    laf "We're going into the {i}mountains{i}."
     laf "Perr packed food, at least."
     perry "It's not a lot - just some trail mix and granola bars - but it's enough to make sure we don't starve."
     "I see Carmilla shake her head."

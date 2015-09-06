@@ -6,7 +6,7 @@ init python hide:
             if file.endswith('.png'):
                 name = file.replace('img/characters/','').replace('/', ' ').replace('.png','')
                 renpy.log(name)
-                renpy.image(name, Image(file))
+                renpy.image(name, Image(file, yoffset=50))
                 continue
             continue
         #Load backgrounds
