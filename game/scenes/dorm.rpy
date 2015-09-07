@@ -1,13 +1,14 @@
 init:
-    $ __doorway = Transform(xpos = 0.31, xanchor = 0, ypos = 0.6, yanchor = 1.0, zoom= 0.5)
+    $ __doorway = Transform(xpos = 0.31, xanchor = 0, ypos = 0.6, yanchor = 1.0, zoom = 0.5)
     
     # define x positions so that we can have more than 3 characters at the front of the screen at once
     # looks like this:  |   left 1  left2   right1  right2  |
+    # anchors image a bit below the bottom of the screen
     
-    $ left1 = Transform(xpos = 0.15, xanchor = 0.5)
-    $ left2 = Transform(xpos = 0.4, xanchor = 0.5)
-    $ right1 = Transform(xpos = 0.6, xanchor = 0.5)
-    $ right2 = Transform(xpos = 0.85, xanchor = 0.5)
+    $ left1 = Transform(xpos = 0.15, xanchor = 0.5, ypos = 1.0, yanchor = 0.9, zoom = 1.0) 
+    $ left2 = Transform(xpos = 0.4, xanchor = 0.5, ypos = 1.0, yanchor = 0.9, zoom = 1.0)
+    $ right1 = Transform(xpos = 0.6, xanchor = 0.5, ypos = 1.0, yanchor = 0.9, zoom = 1.0)
+    $ right2 = Transform(xpos = 0.85, xanchor = 0.5, ypos = 1.0, yanchor = 0.9, zoom = 1.0)
 
 label dorm:
     show dorm
