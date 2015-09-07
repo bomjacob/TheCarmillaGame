@@ -1,13 +1,10 @@
 init:
-    $ __doorway = Transform(xpos = 0.31, xanchor = 0, ypos = 0.6, yanchor = 1.0, zoom= 0.5)
-    
-    # define x positions so that we can have more than 3 characters at the front of the screen at once
-    # looks like this:  |   left 1  left2   right1  right2  |
-    
-    $ left1 = Transform(xpos = 0.15, xanchor = 0.5)
-    $ left2 = Transform(xpos = 0.4, xanchor = 0.5)
-    $ right1 = Transform(xpos = 0.6, xanchor = 0.5)
-    $ right2 = Transform(xpos = 0.85, xanchor = 0.5)
+    #We want them to be able to walk in and out of the room
+    transform __doorway:
+        on show:
+            xpos 0.38 xanchor 0.5 ypos 0.6 yanchor 1.0 zoom 0.5
+        on replace:
+            linear 1.0 xpos 0.38 xanchor 0.5 ypos 0.6 yanchor 1.0 zoom 0.5
 
 label dorm:
     show dorm
@@ -15,7 +12,7 @@ label dorm:
     show laura normal at center
     "I hold onto the desk in front of me as the ground shakes." with shake
     "I close the lid of my laptop as it stops, and turn towards the door."
-    show laura normal at right2 with move
+    show laura normal at right2
     show carm normal at __doorway with dissolve
     carm "Do you really think now is the time to worry about your laptop?" 
     "Carmilla is standing in the doorway, looking harried."
@@ -23,7 +20,8 @@ label dorm:
     "I put the laptop in its bag and throw it over my shoulder. Carmilla looks into the hallway."
     carm "Ginger Twins incoming, and it looks like they’ve packed enough for the whole student body."
 
-    show carm normal at right1 with move
+    show carm normal at right1
+
     show perry normal at left1
     show laf normal at left2
     with easeinleft
@@ -44,7 +42,7 @@ label dorm:
     hide laf with dissolve
     hide perry with dissolve
     laura "Come on, Carm."
-    show carm normal at __doorway with move
+    show carm normal at __doorway
     "She saunters out of our dorm room, mumbling something about who she's going to eat first."
 
     return

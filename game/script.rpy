@@ -11,6 +11,38 @@
     #Minor characters
     define leif = Character(name="Leif", who_color="#8A8335", image="leif")
     define mayor = Character(name="The Mayor", image="mayor")
+
+    #Custom transforms
+    # define 4 positions so that we can have more than 3 characters at the front of the screen at once
+    # looks like this:  |   left 2  left1   right1  right2  |
+    # anchors image a bit below the bottom of the screen
+
+    transform basetrans:
+        xanchor 0.5 ypos 1.0 yanchor 0.8 zoom 1.2
+
+    transform left2:
+        on show:
+            xpos 0.125 basetrans
+        on replace:
+            linear 1 xpos 0.125 basetrans
+
+    transform left1:
+        on show:
+            xpos 0.375 basetrans
+        on replace:
+            linear 1.0 xpos 0.375 basetrans
+
+    transform right1:
+        on show:
+            xpos 0.625 basetrans
+        on replace:
+            linear 1.0 xpos 0.625 basetrans
+
+    transform right2:
+        on show:
+            xpos 0.875 basetrans
+        on replace:
+            linear 1.0 xpos 0.875 basetrans
     
 
 # The game starts here.
