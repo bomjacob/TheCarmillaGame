@@ -1,5 +1,5 @@
 init:
-    $ doorway = Transform(xpos = 0.34, xanchor = 0, ypos = 0.6, yanchor = 1.0, size = (100, 400))
+    $ __doorway = Transform(xpos = 0.31, xanchor = 0, ypos = 0.6, yanchor = 1.0, zoom= 0.5)
     
     # define x positions so that we can have more than 3 characters at the front of the screen at once
     # looks like this:  |   left 1  left2   right1  right2  |
@@ -16,14 +16,14 @@ label dorm:
     "I hold onto the desk in front of me as the ground shakes." with shake
     "I close the lid of my laptop as it stops, and turn towards the door."
     show laura normal at right2 with move
-    show carm normal at doorway with dissolve
+    show carm normal at __doorway with dissolve
     carm "Do you really think now is the time to worry about your laptop?" 
     "Carmilla is standing in the doorway, looking harried."
     laura "I'm not leaving it. What if I need to make an update?"
     "I put the laptop in its bag and throw it over my shoulder. Carmilla looks into the hallway."
     carm "Ginger Twins incoming, and it looks like they’ve packed enough for the whole student body."
 
-    show carm at right1 with move
+    show carm normal at right1 with move
     show perry normal at left1
     show laf normal at left2
     with easeinleft
@@ -44,7 +44,7 @@ label dorm:
     hide laf with dissolve
     hide perry with dissolve
     laura "Come on, Carm."
-    show carm normal at doorway with move
+    show carm normal at __doorway with move
     "She saunters out of our dorm room, mumbling something about who she's going to eat first."
 
     return
