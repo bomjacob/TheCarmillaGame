@@ -149,7 +149,7 @@ init -1 python hide:
 
     ## The default size of text.
 
-    # style.default.size = 22
+    style.default.size = 22
     
     ## The default color of text.
 
