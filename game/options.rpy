@@ -25,15 +25,15 @@ init -1 python hide:
     config.windows_icon = "icon.png"
     config.window_icon = "iconmac.png"
 
-    ## This controls the title of the window, when Ren'Py is
-    ## running in a window.
-
-    config.window_title = u"The Carmilla Game"
-
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "The Carmilla Game"
-    config.version = "0.0"
+    config.version = "0.0.1"
+
+    ## This controls the title of the window, when Ren'Py is
+    ## running in a window.
+
+    config.window_title = u"The Carmilla Game v" + config.version
     
     # Added this line so that we can output log functions
     config.log = "debuglog.txt"
@@ -298,7 +298,7 @@ init python:
     ## The name that's used for directories and archive files. For example, if
     ## this is 'mygame-1.0', the windows distribution will be in the
     ## directory 'mygame-1.0-win', in the 'mygame-1.0-win.zip' file.
-    build.directory_name = "TheCarmillaGame-1.0"
+    build.directory_name = "TheCarmillaGame-" + config.version
 
     ## The name that's uses for executables - the program that users will run
     ## to start the game. For example, if this is 'mygame', then on Windows,
