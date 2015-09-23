@@ -9,11 +9,11 @@ init:
 label dorm:
     show dorm
 
-    show laura normal at center
+    show laura normal at right1
     "I hold onto the desk in front of me as the ground shakes." with shake
     "I close the lid of my laptop as it stops, and turn towards the door."
-    show laura normal at right2
     show carm normal at __doorway with dissolve
+    show laura normal at right2
     carm "Do you really think now is the time to worry about your laptop?" 
     "Carmilla is standing in the doorway, looking harried."
     laura "I'm not leaving it. What if I need to make an update?"
@@ -43,6 +43,6 @@ label dorm:
     hide perry with dissolve
     laura "Come on, Carm."
     show carm normal at __doorway
-    "She saunters out of our dorm room, mumbling something about who she's going to eat first."
+    "Carm saunters out of our dorm room, mumbling something about who she's going to eat first."
 
     return
