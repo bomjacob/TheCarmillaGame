@@ -1,11 +1,11 @@
 label travelling:
     show travelling with dissolve
     
-    show carm at left
+    show laura normal at center with easeinleft
     
-    show laura normal at center
+    show perry at right with easeinright
     
-    show perry at right
+    show carm at left with easeinleft
     
     "Carmilla grumbles and drags her feet through the nearly two feet of snow that covers the path leading away from Silas University."
     
