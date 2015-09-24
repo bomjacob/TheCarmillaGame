@@ -55,6 +55,8 @@ label start:
     
         "Dorm Scene":
             call dorm from _call_dorm
+        "Travelling Scene":
+            call travelling from _call_travelling
         "Tests":
             call tests from _call_tests
 
