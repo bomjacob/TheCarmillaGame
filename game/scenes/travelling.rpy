@@ -1,9 +1,9 @@
 label travelling:
     show travelling with dissolve
     
-    show perry at right with easeinright
-    show laura normal at center with easeinleft
-    show carm at left with easeinleft
+    show perry at right2 with easeinright
+    show laura normal at left1 with easeinleft
+    show carm at left2 with easeinleft
     
     "Carmilla grumbles and drags her feet through the nearly two feet of snow that covers the path leading away from Silas University."
     carm "I still can't believe I have to drink animal blood."
