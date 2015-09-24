@@ -17,7 +17,7 @@ label travelling:
     "I blush furiously, stuttering."
     laura "W-well, I, I was - well. Okay, well maybe I don’t have a complete plan, but I promise, everything's going to be fine."
     perry "I have a bad feeling about this..."
-    laura "Honestly, it'll be fine - I mean, what could go wrong?"
+    laura "Come on, we've all been to hell and back these past few weeks - we can handle whatever this forest throws our way! At least, I hope so..."
     
     scene black with dissolve
     
