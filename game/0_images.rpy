@@ -1,5 +1,6 @@
 # Auto load images from img folder
 init python hide:
+    renpy.log("Loading images:")
     for file in renpy.list_files():
         #Load characters
         if file.startswith('img/characters/'):
@@ -12,8 +13,9 @@ init python hide:
         #Load backgrounds
         if file.startswith('img/bg/'):
             if file.endswith('.jpg'):
-                name = file.replace('img/bg/','').replace('/', ' ').replace('.jpg','')
+                name = file.replace('img/bg/','bg ').replace('/', ' ').replace('.jpg','')
                 renpy.log(name)
                 renpy.image(name, Image(file))
                 continue
             continue
+    renpy.log("Done loading images.")
